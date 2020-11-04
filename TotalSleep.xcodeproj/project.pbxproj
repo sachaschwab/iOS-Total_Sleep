@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17576F8225530A4E00FE5086 /* TotalSleepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17576F8125530A4E00FE5086 /* TotalSleepApp.swift */; };
+		17576F8425530A4E00FE5086 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17576F8325530A4E00FE5086 /* ContentView.swift */; };
+		17576F8625530A5000FE5086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17576F8525530A5000FE5086 /* Assets.xcassets */; };
+		17576F8925530A5000FE5086 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17576F8825530A5000FE5086 /* Preview Assets.xcassets */; };
+		17576F9425530A5000FE5086 /* TotalSleepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17576F9325530A5000FE5086 /* TotalSleepTests.swift */; };
+		17576F9F25530A5000FE5086 /* TotalSleepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17576F9E25530A5000FE5086 /* TotalSleepUITests.swift */; };
+		17576FA425530A5000FE5086 /* TotalSleep WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 17576FA325530A5000FE5086 /* TotalSleep WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		17576FA925530A5000FE5086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17576FA825530A5000FE5086 /* Assets.xcassets */; };
+		17576FB025530A5000FE5086 /* TotalSleep WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 17576FAF25530A5000FE5086 /* TotalSleep WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		17576FB525530A5000FE5086 /* TotalSleepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17576FB425530A5000FE5086 /* TotalSleepApp.swift */; };
+		17576FB725530A5100FE5086 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17576FB625530A5000FE5086 /* ContentView.swift */; };
+		17576FB925530A5100FE5086 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17576FB825530A5100FE5086 /* NotificationController.swift */; };
+		17576FBB25530A5100FE5086 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17576FBA25530A5100FE5086 /* NotificationView.swift */; };
+		17576FBD25530A5100FE5086 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17576FBC25530A5100FE5086 /* ComplicationController.swift */; };
+		17576FBF25530A5100FE5086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17576FBE25530A5100FE5086 /* Assets.xcassets */; };
+		17576FC225530A5100FE5086 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17576FC125530A5100FE5086 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17576F9025530A5000FE5086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17576F7625530A4E00FE5086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17576F7D25530A4E00FE5086;
+			remoteInfo = TotalSleep;
+		};
+		17576F9B25530A5000FE5086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17576F7625530A4E00FE5086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17576F7D25530A4E00FE5086;
+			remoteInfo = TotalSleep;
+		};
+		17576FA525530A5000FE5086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17576F7625530A4E00FE5086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17576FA225530A5000FE5086;
+			remoteInfo = "TotalSleep WatchKit App";
+		};
+		17576FB125530A5000FE5086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 17576F7625530A4E00FE5086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17576FAE25530A5000FE5086;
+			remoteInfo = "TotalSleep WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		17576FCA25530A5100FE5086 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				17576FB025530A5000FE5086 /* TotalSleep WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17576FCE25530A5100FE5086 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				17576FA425530A5000FE5086 /* TotalSleep WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		17576F7E25530A4E00FE5086 /* TotalSleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TotalSleep.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		17576F8125530A4E00FE5086 /* TotalSleepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalSleepApp.swift; sourceTree = "<group>"; };
+		17576F8325530A4E00FE5086 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17576F8525530A5000FE5086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17576F8825530A5000FE5086 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17576F8A25530A5000FE5086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17576F8F25530A5000FE5086 /* TotalSleepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotalSleepTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17576F9325530A5000FE5086 /* TotalSleepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalSleepTests.swift; sourceTree = "<group>"; };
+		17576F9525530A5000FE5086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17576F9A25530A5000FE5086 /* TotalSleepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TotalSleepUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		17576F9E25530A5000FE5086 /* TotalSleepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalSleepUITests.swift; sourceTree = "<group>"; };
+		17576FA025530A5000FE5086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17576FA325530A5000FE5086 /* TotalSleep WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TotalSleep WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17576FA825530A5000FE5086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17576FAA25530A5000FE5086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17576FAF25530A5000FE5086 /* TotalSleep WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TotalSleep WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17576FB425530A5000FE5086 /* TotalSleepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalSleepApp.swift; sourceTree = "<group>"; };
+		17576FB625530A5000FE5086 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		17576FB825530A5100FE5086 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		17576FBA25530A5100FE5086 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		17576FBC25530A5100FE5086 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		17576FBE25530A5100FE5086 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		17576FC125530A5100FE5086 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		17576FC325530A5100FE5086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17576FC425530A5100FE5086 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17576F7B25530A4E00FE5086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17576F8C25530A5000FE5086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17576F9725530A5000FE5086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17576FAC25530A5000FE5086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		17576F7525530A4E00FE5086 = {
+			isa = PBXGroup;
+			children = (
+				17576F8025530A4E00FE5086 /* TotalSleep */,
+				17576F9225530A5000FE5086 /* TotalSleepTests */,
+				17576F9D25530A5000FE5086 /* TotalSleepUITests */,
+				17576FA725530A5000FE5086 /* TotalSleep WatchKit App */,
+				17576FB325530A5000FE5086 /* TotalSleep WatchKit Extension */,
+				17576F7F25530A4E00FE5086 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		17576F7F25530A4E00FE5086 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				17576F7E25530A4E00FE5086 /* TotalSleep.app */,
+				17576F8F25530A5000FE5086 /* TotalSleepTests.xctest */,
+				17576F9A25530A5000FE5086 /* TotalSleepUITests.xctest */,
+				17576FA325530A5000FE5086 /* TotalSleep WatchKit App.app */,
+				17576FAF25530A5000FE5086 /* TotalSleep WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		17576F8025530A4E00FE5086 /* TotalSleep */ = {
+			isa = PBXGroup;
+			children = (
+				17576F8125530A4E00FE5086 /* TotalSleepApp.swift */,
+				17576F8325530A4E00FE5086 /* ContentView.swift */,
+				17576F8525530A5000FE5086 /* Assets.xcassets */,
+				17576F8A25530A5000FE5086 /* Info.plist */,
+				17576F8725530A5000FE5086 /* Preview Content */,
+			);
+			path = TotalSleep;
+			sourceTree = "<group>";
+		};
+		17576F8725530A5000FE5086 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				17576F8825530A5000FE5086 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17576F9225530A5000FE5086 /* TotalSleepTests */ = {
+			isa = PBXGroup;
+			children = (
+				17576F9325530A5000FE5086 /* TotalSleepTests.swift */,
+				17576F9525530A5000FE5086 /* Info.plist */,
+			);
+			path = TotalSleepTests;
+			sourceTree = "<group>";
+		};
+		17576F9D25530A5000FE5086 /* TotalSleepUITests */ = {
+			isa = PBXGroup;
+			children = (
+				17576F9E25530A5000FE5086 /* TotalSleepUITests.swift */,
+				17576FA025530A5000FE5086 /* Info.plist */,
+			);
+			path = TotalSleepUITests;
+			sourceTree = "<group>";
+		};
+		17576FA725530A5000FE5086 /* TotalSleep WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				17576FA825530A5000FE5086 /* Assets.xcassets */,
+				17576FAA25530A5000FE5086 /* Info.plist */,
+			);
+			path = "TotalSleep WatchKit App";
+			sourceTree = "<group>";
+		};
+		17576FB325530A5000FE5086 /* TotalSleep WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				17576FB425530A5000FE5086 /* TotalSleepApp.swift */,
+				17576FB625530A5000FE5086 /* ContentView.swift */,
+				17576FB825530A5100FE5086 /* NotificationController.swift */,
+				17576FBA25530A5100FE5086 /* NotificationView.swift */,
+				17576FBC25530A5100FE5086 /* ComplicationController.swift */,
+				17576FBE25530A5100FE5086 /* Assets.xcassets */,
+				17576FC325530A5100FE5086 /* Info.plist */,
+				17576FC425530A5100FE5086 /* PushNotificationPayload.apns */,
+				17576FC025530A5100FE5086 /* Preview Content */,
+			);
+			path = "TotalSleep WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		17576FC025530A5100FE5086 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				17576FC125530A5100FE5086 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17576F7D25530A4E00FE5086 /* TotalSleep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17576FCF25530A5100FE5086 /* Build configuration list for PBXNativeTarget "TotalSleep" */;
+			buildPhases = (
+				17576F7A25530A4E00FE5086 /* Sources */,
+				17576F7B25530A4E00FE5086 /* Frameworks */,
+				17576F7C25530A4E00FE5086 /* Resources */,
+				17576FCE25530A5100FE5086 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17576FA625530A5000FE5086 /* PBXTargetDependency */,
+			);
+			name = TotalSleep;
+			productName = TotalSleep;
+			productReference = 17576F7E25530A4E00FE5086 /* TotalSleep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		17576F8E25530A5000FE5086 /* TotalSleepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17576FD225530A5100FE5086 /* Build configuration list for PBXNativeTarget "TotalSleepTests" */;
+			buildPhases = (
+				17576F8B25530A5000FE5086 /* Sources */,
+				17576F8C25530A5000FE5086 /* Frameworks */,
+				17576F8D25530A5000FE5086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17576F9125530A5000FE5086 /* PBXTargetDependency */,
+			);
+			name = TotalSleepTests;
+			productName = TotalSleepTests;
+			productReference = 17576F8F25530A5000FE5086 /* TotalSleepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		17576F9925530A5000FE5086 /* TotalSleepUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17576FD525530A5100FE5086 /* Build configuration list for PBXNativeTarget "TotalSleepUITests" */;
+			buildPhases = (
+				17576F9625530A5000FE5086 /* Sources */,
+				17576F9725530A5000FE5086 /* Frameworks */,
+				17576F9825530A5000FE5086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17576F9C25530A5000FE5086 /* PBXTargetDependency */,
+			);
+			name = TotalSleepUITests;
+			productName = TotalSleepUITests;
+			productReference = 17576F9A25530A5000FE5086 /* TotalSleepUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		17576FA225530A5000FE5086 /* TotalSleep WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17576FCB25530A5100FE5086 /* Build configuration list for PBXNativeTarget "TotalSleep WatchKit App" */;
+			buildPhases = (
+				17576FA125530A5000FE5086 /* Resources */,
+				17576FCA25530A5100FE5086 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				17576FB225530A5000FE5086 /* PBXTargetDependency */,
+			);
+			name = "TotalSleep WatchKit App";
+			productName = "TotalSleep WatchKit App";
+			productReference = 17576FA325530A5000FE5086 /* TotalSleep WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		17576FAE25530A5000FE5086 /* TotalSleep WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17576FC725530A5100FE5086 /* Build configuration list for PBXNativeTarget "TotalSleep WatchKit Extension" */;
+			buildPhases = (
+				17576FAB25530A5000FE5086 /* Sources */,
+				17576FAC25530A5000FE5086 /* Frameworks */,
+				17576FAD25530A5000FE5086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TotalSleep WatchKit Extension";
+			productName = "TotalSleep WatchKit Extension";
+			productReference = 17576FAF25530A5000FE5086 /* TotalSleep WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		17576F7625530A4E00FE5086 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					17576F7D25530A4E00FE5086 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					17576F8E25530A5000FE5086 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 17576F7D25530A4E00FE5086;
+					};
+					17576F9925530A5000FE5086 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 17576F7D25530A4E00FE5086;
+					};
+					17576FA225530A5000FE5086 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					17576FAE25530A5000FE5086 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 17576F7925530A4E00FE5086 /* Build configuration list for PBXProject "TotalSleep" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 17576F7525530A4E00FE5086;
+			productRefGroup = 17576F7F25530A4E00FE5086 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17576F7D25530A4E00FE5086 /* TotalSleep */,
+				17576F8E25530A5000FE5086 /* TotalSleepTests */,
+				17576F9925530A5000FE5086 /* TotalSleepUITests */,
+				17576FA225530A5000FE5086 /* TotalSleep WatchKit App */,
+				17576FAE25530A5000FE5086 /* TotalSleep WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		17576F7C25530A4E00FE5086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17576F8925530A5000FE5086 /* Preview Assets.xcassets in Resources */,
+				17576F8625530A5000FE5086 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17576F8D25530A5000FE5086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17576F9825530A5000FE5086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17576FA125530A5000FE5086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17576FA925530A5000FE5086 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17576FAD25530A5000FE5086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17576FC225530A5100FE5086 /* Preview Assets.xcassets in Resources */,
+				17576FBF25530A5100FE5086 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17576F7A25530A4E00FE5086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17576F8425530A4E00FE5086 /* ContentView.swift in Sources */,
+				17576F8225530A4E00FE5086 /* TotalSleepApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17576F8B25530A5000FE5086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17576F9425530A5000FE5086 /* TotalSleepTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17576F9625530A5000FE5086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17576F9F25530A5000FE5086 /* TotalSleepUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		17576FAB25530A5000FE5086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17576FB925530A5100FE5086 /* NotificationController.swift in Sources */,
+				17576FB725530A5100FE5086 /* ContentView.swift in Sources */,
+				17576FBD25530A5100FE5086 /* ComplicationController.swift in Sources */,
+				17576FB525530A5000FE5086 /* TotalSleepApp.swift in Sources */,
+				17576FBB25530A5100FE5086 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17576F9125530A5000FE5086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17576F7D25530A4E00FE5086 /* TotalSleep */;
+			targetProxy = 17576F9025530A5000FE5086 /* PBXContainerItemProxy */;
+		};
+		17576F9C25530A5000FE5086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17576F7D25530A4E00FE5086 /* TotalSleep */;
+			targetProxy = 17576F9B25530A5000FE5086 /* PBXContainerItemProxy */;
+		};
+		17576FA625530A5000FE5086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17576FA225530A5000FE5086 /* TotalSleep WatchKit App */;
+			targetProxy = 17576FA525530A5000FE5086 /* PBXContainerItemProxy */;
+		};
+		17576FB225530A5000FE5086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 17576FAE25530A5000FE5086 /* TotalSleep WatchKit Extension */;
+			targetProxy = 17576FB125530A5000FE5086 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17576FC525530A5100FE5086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		17576FC625530A5100FE5086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		17576FC825530A5100FE5086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TotalSleep WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 99BTQ3FHUL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TotalSleep WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.boxc.TotalSleep.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		17576FC925530A5100FE5086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TotalSleep WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 99BTQ3FHUL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "TotalSleep WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.boxc.TotalSleep.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		17576FCC25530A5100FE5086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99BTQ3FHUL;
+				IBSC_MODULE = TotalSleep_WatchKit_Extension;
+				INFOPLIST_FILE = "TotalSleep WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.boxc.TotalSleep.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		17576FCD25530A5100FE5086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99BTQ3FHUL;
+				IBSC_MODULE = TotalSleep_WatchKit_Extension;
+				INFOPLIST_FILE = "TotalSleep WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.boxc.TotalSleep.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		17576FD025530A5100FE5086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TotalSleep/Preview Content\"";
+				DEVELOPMENT_TEAM = 99BTQ3FHUL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TotalSleep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.boxc.TotalSleep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		17576FD125530A5100FE5086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TotalSleep/Preview Content\"";
+				DEVELOPMENT_TEAM = 99BTQ3FHUL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TotalSleep/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.boxc.TotalSleep;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17576FD325530A5100FE5086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99BTQ3FHUL;
+				INFOPLIST_FILE = TotalSleepTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.boxc.TotalSleepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TotalSleep.app/TotalSleep";
+			};
+			name = Debug;
+		};
+		17576FD425530A5100FE5086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99BTQ3FHUL;
+				INFOPLIST_FILE = TotalSleepTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.boxc.TotalSleepTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TotalSleep.app/TotalSleep";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		17576FD625530A5100FE5086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99BTQ3FHUL;
+				INFOPLIST_FILE = TotalSleepUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.boxc.TotalSleepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TotalSleep;
+			};
+			name = Debug;
+		};
+		17576FD725530A5100FE5086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99BTQ3FHUL;
+				INFOPLIST_FILE = TotalSleepUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.boxc.TotalSleepUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TotalSleep;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		17576F7925530A4E00FE5086 /* Build configuration list for PBXProject "TotalSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17576FC525530A5100FE5086 /* Debug */,
+				17576FC625530A5100FE5086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17576FC725530A5100FE5086 /* Build configuration list for PBXNativeTarget "TotalSleep WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17576FC825530A5100FE5086 /* Debug */,
+				17576FC925530A5100FE5086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17576FCB25530A5100FE5086 /* Build configuration list for PBXNativeTarget "TotalSleep WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17576FCC25530A5100FE5086 /* Debug */,
+				17576FCD25530A5100FE5086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17576FCF25530A5100FE5086 /* Build configuration list for PBXNativeTarget "TotalSleep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17576FD025530A5100FE5086 /* Debug */,
+				17576FD125530A5100FE5086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17576FD225530A5100FE5086 /* Build configuration list for PBXNativeTarget "TotalSleepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17576FD325530A5100FE5086 /* Debug */,
+				17576FD425530A5100FE5086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		17576FD525530A5100FE5086 /* Build configuration list for PBXNativeTarget "TotalSleepUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17576FD625530A5100FE5086 /* Debug */,
+				17576FD725530A5100FE5086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 17576F7625530A4E00FE5086 /* Project object */;
+}
