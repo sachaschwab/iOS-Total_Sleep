@@ -1,21 +1,25 @@
 {
   "images" : [
     {
+      "filename" : "moon_V1.2_52.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : "<=145"
     },
     {
+      "filename" : "moon_V1.2_58.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">161"
     },
     {
+      "filename" : "moon_V1.2_58-1.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">145"
     },
     {
+      "filename" : "moon_V1.2_64.png",
       "idiom" : "watch",
       "scale" : "2x",
       "screen-width" : ">183"
