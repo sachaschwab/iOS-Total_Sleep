@@ -12,6 +12,7 @@ struct TotalSleepApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            
         }
     }
 }

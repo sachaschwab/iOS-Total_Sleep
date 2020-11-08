@@ -17,9 +17,9 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -29,5 +29,11 @@
 	<string>net.boxc.TotalSleep</string>
 	<key>WKWatchKitApp</key>
 	<true/>
+	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
+	<string></string>
+	<key>NSHealthShareUsageDescription</key>
+	<string></string>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string></string>
 </dict>
 </plist>
