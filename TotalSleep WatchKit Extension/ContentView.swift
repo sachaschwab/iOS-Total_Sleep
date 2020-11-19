@@ -6,11 +6,26 @@
 //
 
 import SwiftUI
+import HealthKit
 
 struct ContentView: View {
+    
+    @ObservedObject var network = NetworkHelper()
+    
+    public var healthStoreAuth = HKHealthStore()
+    
     var body: some View {
-        Text("Hello, World!")
+        Text(network.totalSlept)
             .padding()
+            .onAppear(perform: {
+                start()
+            })
+        
+    }
+    
+    func start() {
+        print("Started")
+        authorizeSleepAnalysis()
     }
 }
 

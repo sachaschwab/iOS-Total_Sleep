@@ -35,10 +35,10 @@
 	<key>WKRunsIndependentlyOfCompanionApp</key>
 	<true/>
 	<key>NSHealthClinicalHealthRecordsShareUsageDescription</key>
-	<string></string>
+	<string>Workout data</string>
 	<key>NSHealthShareUsageDescription</key>
-	<string></string>
+	<string>For medical suggestions</string>
 	<key>NSHealthUpdateUsageDescription</key>
-	<string></string>
+	<string>Save workout data</string>
 </dict>
 </plist>

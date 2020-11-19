@@ -26,8 +26,16 @@ public class NetworkHelper: ObservableObject {
             print("result from return: \(result.count)")
             print("finished NetworkHelper")
             self.totalSlept = self.calculator.calculateSleep(result: result)
+            //self.calculator.retrieveSleepAnalysis()
         })
-        }
+    }
+    func updateView(){
+        self.objectWillChange.send()
+        readSleepData(completion: { (result) in
+            self.analysisResult = result
+            self.totalSlept = self.calculator.calculateSleep(result: result)
+        })
+    }
     
     public func readSleepData(completion: @escaping ([HKSample]) -> Void) {
         // first, we define the object type we want
@@ -36,34 +44,15 @@ public class NetworkHelper: ObservableObject {
             return
         }
         
-        // Get the dates
-        // DEV Data
-        /*let formatter = DateFormatter()
-         formatter.dateFormat = "yyyy/MM/dd HH:mm"
-         let startDate = formatter.date(from: "2020/10/27 18:00")
-         let endDate = formatter.date(from: "2020/10/29 08:00")
-         readSleepData(from: startDate, to: endDate)*/
         
-        // Get current time stamp and deduct one day to create the start date
-        let currentDate = Date()
-        // Format to ... seconds date format
-        let format = DateFormatter()
-        format.dateFormat = "yyyy/MM/dd HH:mm"
-        let formattedEndDate = format.string(from: currentDate)
-        // Debug
-        print("Start Date: \(formattedEndDate)")
-        // Day deduction produces an optional to unwrap
+        let currentDate = Calendar.current.date(byAdding: .day, value: -0, to: Date())
         let pastDayDate = Calendar.current.date(byAdding: .day, value: -1, to: Date())
 
         if let unwrappedStartDate = pastDayDate {
-            //readSleepData(from: unwrappedStartDate, to: Date())
-            //print(type(of: unwrappedStartDate))
-            //endDate = unwrappedStartDate
-            
-            // we create a predicate to filter our data, and a sort description
-            // TODO: Wrap into seperate function
-            let predicate = HKQuery.predicateForSamples(withStart: unwrappedStartDate, end: Date(), options: .strictStartDate)
-            let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: false)
+
+            let predicate = HKQuery.predicateForSamples(withStart: unwrappedStartDate, end: currentDate, options: .strictStartDate)
+            let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: true)
+            print("creating query")
             // Create query
             let query = HKSampleQuery(sampleType: sleepType, predicate: predicate, limit: 50, sortDescriptors: [sortDescriptor]) {(query, result, error) in
                 if error != nil {
@@ -73,7 +62,8 @@ public class NetworkHelper: ObservableObject {
                 if let result = result {
                     //print("passing result: \(result)")
                     self.analysisResult = result
-                    print("result count: \(self.analysisResult.count)")
+                    print("result : \(self.analysisResult)")
+                    
                 } else {
                     completion(result ?? [])
                     return
@@ -84,7 +74,7 @@ public class NetworkHelper: ObservableObject {
                 }
             }
             // finally, we execute our query
-            
+            print("execute query")
             let healthStore = HKHealthStore()
             healthStore.execute(query)
             print("passing result count: \(self.analysisResult.count)")

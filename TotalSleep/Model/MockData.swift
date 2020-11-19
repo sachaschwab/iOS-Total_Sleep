@@ -6,10 +6,18 @@
 
 import SwiftUI
 
-let recipeNames = ["Italian Pizza Chicken",
-                       "Greek Pasta Bake",
-                       "Hearty Parsnip Soup"]
-
-let mockRecipeNames = ["Pork & Potato Hotpot",
-               "Thai Green Curry",
-               "Italian Sausage & Beans"]
+class MockSleepData: ObservableObject {
+    
+    @Published var items = [DaySleepItem]()
+    
+    init?() {
+        objectWillChange.send()
+        
+        guard let currentDate = Calendar.current.date(byAdding: .day, value: -0, to: Date()) else { return nil }
+        guard let pastDayDate = Calendar.current.date(byAdding: .day, value: -1, to: Date()) else { return nil }
+        
+        // Append items
+        items.append(DaySleepItem(day: currentDate, totalSleep: "6 hours 5 minutes"))
+        items.append(DaySleepItem(day: pastDayDate, totalSleep: "8 hours 30 minutes"))
+    }
+}

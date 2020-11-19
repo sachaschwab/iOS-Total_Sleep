@@ -24,11 +24,19 @@
 		17576FBD25530A5100FE5086 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17576FBC25530A5100FE5086 /* ComplicationController.swift */; };
 		17576FBF25530A5100FE5086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17576FBE25530A5100FE5086 /* Assets.xcassets */; };
 		17576FC225530A5100FE5086 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17576FC125530A5100FE5086 /* Preview Assets.xcassets */; };
+		17CE543125667D2700352C5F /* DaySleepList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE543025667D2700352C5F /* DaySleepList.swift */; };
+		17CE543D25667E0F00352C5F /* DaySleepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE543C25667E0F00352C5F /* DaySleepCell.swift */; };
+		17CE544925668AE100352C5F /* TestNetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CE544825668AE100352C5F /* TestNetworkHelper.swift */; };
 		17EAB65325581EEA002225DA /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAB65225581EEA002225DA /* MockData.swift */; };
-		17EAB65A25581EFC002225DA /* SleepData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAB65925581EFC002225DA /* SleepData.swift */; };
+		17EAB65A25581EFC002225DA /* DaySleepItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAB65925581EFC002225DA /* DaySleepItem.swift */; };
 		17EAB66125581F11002225DA /* AuthHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAB66025581F11002225DA /* AuthHelper.swift */; };
 		17EAB66825581F1B002225DA /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAB66725581F1B002225DA /* NetworkHelper.swift */; };
 		17EAB66F25581F28002225DA /* SleepAnalysisCalulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAB66E25581F28002225DA /* SleepAnalysisCalulation.swift */; };
+		17EAB69625582ACB002225DA /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAB66725581F1B002225DA /* NetworkHelper.swift */; };
+		17EAB69C25582ACF002225DA /* SleepAnalysisCalulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAB66E25581F28002225DA /* SleepAnalysisCalulation.swift */; };
+		17EAB6A325588C70002225DA /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAB6A225588C70002225DA /* Auth.swift */; };
+		17EAB6B025588D2D002225DA /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17EAB6AF25588D2D002225DA /* HealthKit.framework */; };
+		17EAB6B7255BFD9F002225DA /* ProcessHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EAB6B6255BFD9F002225DA /* ProcessHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,11 +123,18 @@
 		17576FC125530A5100FE5086 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17576FC325530A5100FE5086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17576FC425530A5100FE5086 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		17CE543025667D2700352C5F /* DaySleepList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySleepList.swift; sourceTree = "<group>"; };
+		17CE543C25667E0F00352C5F /* DaySleepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySleepCell.swift; sourceTree = "<group>"; };
+		17CE544825668AE100352C5F /* TestNetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNetworkHelper.swift; sourceTree = "<group>"; };
 		17EAB65225581EEA002225DA /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
-		17EAB65925581EFC002225DA /* SleepData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepData.swift; sourceTree = "<group>"; };
+		17EAB65925581EFC002225DA /* DaySleepItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaySleepItem.swift; sourceTree = "<group>"; };
 		17EAB66025581F11002225DA /* AuthHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHelper.swift; sourceTree = "<group>"; };
 		17EAB66725581F1B002225DA /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		17EAB66E25581F28002225DA /* SleepAnalysisCalulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepAnalysisCalulation.swift; sourceTree = "<group>"; };
+		17EAB6A225588C70002225DA /* Auth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		17EAB6AE25588D2D002225DA /* TotalSleep WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TotalSleep WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		17EAB6AF25588D2D002225DA /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		17EAB6B6255BFD9F002225DA /* ProcessHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17EAB6B025588D2D002225DA /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +176,9 @@
 			children = (
 				17EAB66025581F11002225DA /* AuthHelper.swift */,
 				17EAB66725581F1B002225DA /* NetworkHelper.swift */,
+				17CE544825668AE100352C5F /* TestNetworkHelper.swift */,
 				17EAB66E25581F28002225DA /* SleepAnalysisCalulation.swift */,
+				17EAB6B6255BFD9F002225DA /* ProcessHandler.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -168,6 +186,9 @@
 		171EABA425559A890020B8A9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				17CE543C25667E0F00352C5F /* DaySleepCell.swift */,
+				17CE543025667D2700352C5F /* DaySleepList.swift */,
+				17576F8325530A4E00FE5086 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,7 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				17EAB65225581EEA002225DA /* MockData.swift */,
-				17EAB65925581EFC002225DA /* SleepData.swift */,
+				17EAB65925581EFC002225DA /* DaySleepItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +205,7 @@
 		171EAC5225569BEC0020B8A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				17EAB6AF25588D2D002225DA /* HealthKit.framework */,
 				171EAC5325569BEC0020B8A9 /* HealthKit.framework */,
 			);
 			name = Frameworks;
@@ -218,13 +240,12 @@
 			isa = PBXGroup;
 			children = (
 				171EAC5125569BEC0020B8A9 /* TotalSleep.entitlements */,
+				17576F8125530A4E00FE5086 /* TotalSleepApp.swift */,
+				17576F8A25530A5000FE5086 /* Info.plist */,
+				17576F8525530A5000FE5086 /* Assets.xcassets */,
 				171EABA525559A980020B8A9 /* Model */,
 				171EABA425559A890020B8A9 /* View */,
 				171EABA125559A560020B8A9 /* ViewModel */,
-				17576F8125530A4E00FE5086 /* TotalSleepApp.swift */,
-				17576F8325530A4E00FE5086 /* ContentView.swift */,
-				17576F8525530A5000FE5086 /* Assets.xcassets */,
-				17576F8A25530A5000FE5086 /* Info.plist */,
 				17576F8725530A5000FE5086 /* Preview Content */,
 			);
 			path = TotalSleep;
@@ -268,7 +289,9 @@
 		17576FB325530A5000FE5086 /* TotalSleep WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				17EAB6AE25588D2D002225DA /* TotalSleep WatchKit Extension.entitlements */,
 				17576FB425530A5000FE5086 /* TotalSleepApp.swift */,
+				17EAB6A225588C70002225DA /* Auth.swift */,
 				17576FB625530A5000FE5086 /* ContentView.swift */,
 				17576FB825530A5100FE5086 /* NotificationController.swift */,
 				17576FBA25530A5100FE5086 /* NotificationView.swift */,
@@ -479,10 +502,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17CE543D25667E0F00352C5F /* DaySleepCell.swift in Sources */,
+				17CE543125667D2700352C5F /* DaySleepList.swift in Sources */,
+				17CE544925668AE100352C5F /* TestNetworkHelper.swift in Sources */,
 				17576F8425530A4E00FE5086 /* ContentView.swift in Sources */,
-				17EAB65A25581EFC002225DA /* SleepData.swift in Sources */,
+				17EAB65A25581EFC002225DA /* DaySleepItem.swift in Sources */,
 				17EAB66125581F11002225DA /* AuthHelper.swift in Sources */,
 				17EAB65325581EEA002225DA /* MockData.swift in Sources */,
+				17EAB6B7255BFD9F002225DA /* ProcessHandler.swift in Sources */,
 				17EAB66825581F1B002225DA /* NetworkHelper.swift in Sources */,
 				17EAB66F25581F28002225DA /* SleepAnalysisCalulation.swift in Sources */,
 				17576F8225530A4E00FE5086 /* TotalSleepApp.swift in Sources */,
@@ -513,7 +540,10 @@
 				17576FB725530A5100FE5086 /* ContentView.swift in Sources */,
 				17576FBD25530A5100FE5086 /* ComplicationController.swift in Sources */,
 				17576FB525530A5000FE5086 /* TotalSleepApp.swift in Sources */,
+				17EAB69625582ACB002225DA /* NetworkHelper.swift in Sources */,
+				17EAB69C25582ACF002225DA /* SleepAnalysisCalulation.swift in Sources */,
 				17576FBB25530A5100FE5086 /* NotificationView.swift in Sources */,
+				17EAB6A325588C70002225DA /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -658,6 +688,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "TotalSleep WatchKit Extension/TotalSleep WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"TotalSleep WatchKit Extension/Preview Content\"";
@@ -684,6 +715,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "TotalSleep WatchKit Extension/TotalSleep WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_ASSET_PATHS = "\"TotalSleep WatchKit Extension/Preview Content\"";
