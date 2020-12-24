@@ -7,33 +7,19 @@
 import SwiftUI
 import HealthKit
 
+// USING
+
 class DaySleepItem: ObservableObject, Identifiable {
-    // unused (crap)
     let id = UUID()
-    // @Published var day: Date = Date()
     var day: Date
-    // @Published var samples = [HKSample]()
-    // @Published var totalSleepMinutes: Int = 0
+    var dayString: String
     var totalSleep: String
+    var totalSecondsSlept: Int = 0
     
-    /*func calculateTotalSleep(samples: [HKSample]) {
-        objectWillChange.send()
-        var totalMinutes = 0
-        for item in samples {
-            if let sample = item as? HKCategorySample {
-                let value = HKCategoryValueSleepAnalysis(rawValue: sample.value)
-                if value == .asleep {
-                    let seconds = sample.endDate.timeIntervalSince(sample.startDate)
-                    totalMinutes += Int(seconds) / 60
-                }
-            }
-        }
-        self.totalSleepMinutes = totalMinutes
-    }*/
-    
-    init(day: Date, totalSleep: String) {
+    init(day: Date, dayString: String, totalSleep: String, totalSecondsSlept: Int) {
         self.day = day
+        self.dayString = dayString
         self.totalSleep = totalSleep
-        // self.samples = samples
+        self.totalSecondsSlept = totalSecondsSlept
     }
 }

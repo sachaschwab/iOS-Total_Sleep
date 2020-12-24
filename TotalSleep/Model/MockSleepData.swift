@@ -9,6 +9,9 @@ import SwiftUI
 class MockSleepData: ObservableObject {
     
     @Published var items = [DaySleepItem]()
+    @ObservedObject var calculator = SleepAnalysisCalculation()
+    //let network = NetworkHelper()
+    //let queryHelper = QueryHelper()
     
     init?() {
         objectWillChange.send()

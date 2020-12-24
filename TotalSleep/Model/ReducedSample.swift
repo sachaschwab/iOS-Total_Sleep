@@ -5,4 +5,8 @@
 //  Created by Sacha Schwab on 29.11.20.
 //
 
-import Foundation
+import SwiftUI
+import HealthKit
+
+// Reduced sample is created to hold values
+

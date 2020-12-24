@@ -10,20 +10,31 @@ import SwiftUI
 struct DaySleepCell: View {
     
     let cellTitleText: String
+    let cellSubTitleText: String
         
-        var body: some View {
-            VStack(alignment: .leading) {
-                Text(cellTitleText)
-                    .font(.title)
-                Text("some subtitle")
-                    .font(.subheadline)
-            }
+    var body: some View {
+        VStack(alignment: .leading){
+            Text(cellTitleText)
+                .font(.title)
+                .foregroundColor(Color.white)
+            Text(cellSubTitleText)
+                .font(.subheadline)
+                .foregroundColor(Color.white)
         }
+        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+        .padding()
+        .background(
+            RoundedRectangle(cornerRadius: 15)
+                .foregroundColor(Color.black)
+        )
+    }
 }
 
 struct DaySleepCell_Previews: PreviewProvider {
     static var previews: some View {
-            let mockData = "Ciao World"
-            DaySleepCell(cellTitleText: mockData)
+            let mockTitle = "Ciao World"
+            let mockSubTitle = "22.11.2020"
+        DaySleepCell(cellTitleText: mockTitle, cellSubTitleText: mockSubTitle)
+            .previewLayout(PreviewLayout.sizeThatFits)
         }
 }

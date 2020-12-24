@@ -10,21 +10,22 @@ import HealthKit
 
 struct ContentView: View {
     
-    @ObservedObject var network = NetworkHelper()
+    //@ObservedObject var network = NetworkHelper()
     
     public var healthStoreAuth = HKHealthStore()
     
     var body: some View {
-        Text(network.totalSlept)
+        /*Text(network.totalSlept)
             .padding()
             .onAppear(perform: {
                 start()
-            })
+            })*/
+        Text("Text will go here")
         
     }
     
     func start() {
-        print("Started")
+        // print("Started")
         authorizeSleepAnalysis()
     }
 }

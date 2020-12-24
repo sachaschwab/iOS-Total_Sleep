@@ -8,6 +8,8 @@
 import SwiftUI
 import HealthKit
 
+// USING
+
 public class SleepAnalysisCalculation: ObservableObject {
     
     let healthStore = HKHealthStore()
@@ -15,7 +17,7 @@ public class SleepAnalysisCalculation: ObservableObject {
     //@Published var totalSlept = String()
     //@ObservedObject var fetcher = NetworkHelper()
 
-    public func calculateSleep(result: [HKSample]) -> String {
+    /* public func calculateSleep(result: [HKSample]) -> String {
         var totalSeconds = Int()
         var totalHours = Int()
         var totalMins = Int()
@@ -37,12 +39,12 @@ public class SleepAnalysisCalculation: ObservableObject {
                 // TODO: Zuordnen der Start- und Enddaten
                 
                 let seconds = sample.endDate.timeIntervalSince(sample.startDate)
-                print("start: \(sample.startDate)")
+                /*print("start: \(sample.startDate)")
                 print("end: \(sample.endDate)")
                 print("is asleep: \(isAsleep)")
                 print("is in bed: \(isInBed)")
                 print("is awake: \(isAwake)")
-                print("interval: \(seconds) \n")
+                print("interval: \(seconds) \n")*/
 
                 
                 //print("Interval in seconds: \(seconds)")
@@ -59,13 +61,53 @@ public class SleepAnalysisCalculation: ObservableObject {
         totalMins = totalMinutes % 60
 
         //self.totalSlept = "Total slept: \(totalHours) hours \(totalMins) minutes"
-        return "\n \(totalHours) hours \(totalMins) minutes"
+        return "\(totalHours) hours \(totalMins) minutes"
+    } */
+    
+    func calculateSleptSeconds(result: [HKSample]) -> (totalSeconds: Int, deviceHash: Int, deviceName: String, startTime: Date, endTime: Date) {
+        var totalSeconds = Int()
+        var deviceName = String()
+        var deviceHash = Int()
+        var startTime = Date()
+        var endTime = Date()
+        result
+            .compactMap({ $0 as? HKCategorySample })
+            .forEach({sample in
+                guard let sleepValue = HKCategoryValueSleepAnalysis(rawValue: sample.value) else {
+                    return
+                }
+                
+                let isAsleep = sleepValue == .asleep
+                let isInBed = sleepValue == .inBed
+                let isAwake = sleepValue == .awake
+                    
+                // print("HealthKit sleep Start: \(sample.startDate) End: \(sample.endDate) - source \(sample.sourceRevision.source.name) - isAsleep \(isAsleep)")
+                
+                // TODO: Zuordnen der Start- und Enddaten
+                
+                let seconds = sample.endDate.timeIntervalSince(sample.startDate)
+                deviceName = sample.sourceRevision.source.name
+                deviceHash = sample.sourceRevision.source.hash
+                startTime = sample.startDate
+                endTime = sample.endDate
+                print("source revision name: \(String(describing: sample.sourceRevision.source.name))")
+                print("source revision hash: \(String(describing: sample.sourceRevision.source.hash))")
+                //print("source revision product type: \(String(describing: sample.sourceRevision.productType))")
+                print("start: \(sample.startDate)")
+                print("end: \(sample.endDate)")
+                print("is asleep: \(isAsleep)")
+                print("is in bed: \(isInBed)")
+                print("is awake: \(isAwake)")
+                print("interval: \(seconds) \n")
+                
+                if isAsleep == true {
+                    totalSeconds = totalSeconds + Int(seconds)
+                }
+            })
+        return (totalSeconds, deviceHash, deviceName, startTime, endTime)
     }
     
-    
-    
-    // Branch force-save: Test alternative
-    func retrieveSleepAnalysis() {
+    /*func retrieveSleepAnalysis() {
             
             // startDate and endDate are NSDate objects
             
@@ -109,7 +151,7 @@ public class SleepAnalysisCalculation: ObservableObject {
                                 let isInBed = sleepValue == .inBed
                                 let isAwake = sleepValue == .awake
                                     
-                                //print("HealthKit sleep Start: \(sample.startDate) End: \(sample.endDate) - source \(sample.sourceRevision.source.name) - isAsleep \(isAsleep)")
+                                // print("HealthKit sleep Start: \(sample.startDate) End: \(sample.endDate) - source \(sample.sourceRevision.source.name) - isAsleep \(isAsleep)")
                                 
                                 // TODO: Zuordnen der Start- und Enddaten
                                 
@@ -129,5 +171,5 @@ public class SleepAnalysisCalculation: ObservableObject {
                 }
             healthStore.execute(query)
             }
-        }
+        } */
 }
