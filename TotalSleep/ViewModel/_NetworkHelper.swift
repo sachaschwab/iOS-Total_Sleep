@@ -19,13 +19,13 @@ public class NetworkHelper: ObservableObject {
     var endDate: Date = Date()
     
     init(){
-        print("init NetworkHelper")
+        //print("init NetworkHelper")
         readSleepData(completion: { (result) in
-            print("initialized NetworkHelper")
+            //print("initialized NetworkHelper")
             self.analysisResult = result
-            print("result from return: \(result.count)")
-            print("finished NetworkHelper")
-            self.totalSlept = self.calculator.calculateSleep(result: result)
+            //print("result from return: \(result.count)")
+            //print("finished NetworkHelper")
+            // self.totalSlept = self.calculator.calculateSleep(result: result)
             //self.calculator.retrieveSleepAnalysis()
         })
     }
@@ -33,7 +33,7 @@ public class NetworkHelper: ObservableObject {
         self.objectWillChange.send()
         readSleepData(completion: { (result) in
             self.analysisResult = result
-            self.totalSlept = self.calculator.calculateSleep(result: result)
+            // self.totalSlept = self.calculator.calculateSleep(result: result)
         })
     }
     
@@ -44,7 +44,6 @@ public class NetworkHelper: ObservableObject {
             return
         }
         
-        
         let currentDate = Calendar.current.date(byAdding: .day, value: -0, to: Date())
         let pastDayDate = Calendar.current.date(byAdding: .day, value: -1, to: Date())
 
@@ -52,7 +51,7 @@ public class NetworkHelper: ObservableObject {
 
             let predicate = HKQuery.predicateForSamples(withStart: unwrappedStartDate, end: currentDate, options: .strictStartDate)
             let sortDescriptor = NSSortDescriptor(key: HKSampleSortIdentifierEndDate, ascending: true)
-            print("creating query")
+            //print("creating query")
             // Create query
             let query = HKSampleQuery(sampleType: sleepType, predicate: predicate, limit: 50, sortDescriptors: [sortDescriptor]) {(query, result, error) in
                 if error != nil {
@@ -62,7 +61,7 @@ public class NetworkHelper: ObservableObject {
                 if let result = result {
                     //print("passing result: \(result)")
                     self.analysisResult = result
-                    print("result : \(self.analysisResult)")
+                    //print("result : \(self.analysisResult)")
                     
                 } else {
                     completion(result ?? [])
@@ -74,10 +73,10 @@ public class NetworkHelper: ObservableObject {
                 }
             }
             // finally, we execute our query
-            print("execute query")
+            //print("execute query")
             let healthStore = HKHealthStore()
             healthStore.execute(query)
-            print("passing result count: \(self.analysisResult.count)")
+            //print("passing result count: \(self.analysisResult.count)")
         }
     }
 }

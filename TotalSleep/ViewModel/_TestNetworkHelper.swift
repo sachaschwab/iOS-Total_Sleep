@@ -11,11 +11,8 @@ import HealthKit
 class TestNetworkHelper: ObservableObject {
     
     @Published var items = [DaySleepItem]()
-    
     @ObservedObject var calculator = SleepAnalysisCalculation()
-    
     @Published var totalSlept = "Sali" // Dummy
-    
     let network = NetworkHelper()
     @Published var analysisResult = [HKSample]()
     
@@ -23,18 +20,21 @@ class TestNetworkHelper: ObservableObject {
         objectWillChange.send()
         
         network.readSleepData(completion: { (result) in
-            print("initialized NetworkHelper")
+            //print("initialized TestNetworkHelper")
             self.analysisResult = result
-            print("result from return: \(result.count)")
-            print("finished NetworkHelper")
+            //print("finished NetworkHelper")
             
             let currentDate = Calendar.current.date(byAdding: .day, value: -0, to: Date())
             
+            let formatter = DateFormatter()
+            formatter.dateStyle = .short
+            formatter.timeZone = TimeZone.current
+            formatter.dateFormat = "EEEE, dd.MM.yyyy"
+            let currentDateString: String = formatter.string(from: currentDate ?? Date())
+            
             // Append items
-            self.totalSlept = self.calculator.calculateSleep(result: result)
-            self.items.append(DaySleepItem(day: currentDate ?? Date(), totalSleep: self.totalSlept))
+            // self.totalSlept = self.calculator.calculateSleep(result: result)
+            self.items.append(DaySleepItem(day: Date(), dayString: "Monday", totalSleep: self.totalSlept, totalSecondsSlept: 0))
         })
-        
-        
     }
 }

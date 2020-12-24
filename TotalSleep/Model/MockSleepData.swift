@@ -17,7 +17,7 @@ class MockSleepData: ObservableObject {
         guard let pastDayDate = Calendar.current.date(byAdding: .day, value: -1, to: Date()) else { return nil }
         
         // Append items
-        items.append(DaySleepItem(day: currentDate, totalSleep: "6 hours 5 minutes"))
-        items.append(DaySleepItem(day: pastDayDate, totalSleep: "8 hours 30 minutes"))
+        items.append(DaySleepItem(day: currentDate, dayString: "Monday", totalSleep: "6 hours 5 minutes", totalSecondsSlept: 0))
+        items.append(DaySleepItem(day: pastDayDate, dayString: "Tuesday", totalSleep: "8 hours 30 minutes", totalSecondsSlept: 0))
     }
 }
