@@ -44,6 +44,7 @@ class InitialDataLoad: ObservableObject {
             guard let startDateTime = Calendar.current.date(byAdding: .day, value: -day, to: initialDateTime) else { return }
             guard let endDateTime = Calendar.current.date(byAdding: .day, value: -day+1, to: initialDateTime) else {
                 return }
+            
             // Read Sleep Data from day
             queryHelper.querySleep(startDateTime: startDateTime, endDateTime: endDateTime, completion: { (result) in
                 // Calculate Total time slept
